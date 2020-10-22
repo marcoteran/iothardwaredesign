@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:breakout_firstproject-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 2
+Title "Main circuit"
+Date "2020-10-15"
+Rev "1"
+Comp "Universidad Sergio Arboleda"
+Comment1 "Designer: Marco Teran"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5F89E7B4
+P 9025 3525
+F 0 "D1" V 9064 3407 50  0000 R CNN
+F 1 "LED" V 8973 3407 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 9025 3525 50  0001 C CNN
+F 3 "~" H 9025 3525 50  0001 C CNN
+	1    9025 3525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F89F465
+P 9025 4075
+F 0 "R1" H 9095 4121 50  0000 L CNN
+F 1 "1k" H 9095 4030 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8955 4075 50  0001 C CNN
+F 3 "~" H 9025 4075 50  0001 C CNN
+	1    9025 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F89FF96
+P 9025 4425
+F 0 "#PWR05" H 9025 4175 50  0001 C CNN
+F 1 "GND" H 9030 4252 50  0000 C CNN
+F 2 "" H 9025 4425 50  0001 C CNN
+F 3 "" H 9025 4425 50  0001 C CNN
+	1    9025 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5F8A0690
+P 9025 3175
+F 0 "#PWR01" H 9025 3025 50  0001 C CNN
+F 1 "+3.3V" H 9040 3348 50  0000 C CNN
+F 2 "" H 9025 3175 50  0001 C CNN
+F 3 "" H 9025 3175 50  0001 C CNN
+	1    9025 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9025 3175 9025 3375
+Wire Wire Line
+	9025 3675 9025 3925
+Wire Wire Line
+	9025 4225 9025 4425
+$Sheet
+S 2050 3025 2650 1975
+U 5F8A13AB
+F0 "Regulation" 50
+F1 "regulation_circuit.sch" 50
+F2 "VCC" I R 4700 3375 50 
+F3 "GND" I R 4700 4750 50 
+F4 "D3.3V" O R 4700 3700 50 
+$EndSheet
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F8EF75E
+P 5200 3225
+F 0 "#PWR03" H 5200 3075 50  0001 C CNN
+F 1 "+3.3V" H 5215 3398 50  0000 C CNN
+F 2 "" H 5200 3225 50  0001 C CNN
+F 3 "" H 5200 3225 50  0001 C CNN
+	1    5200 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 5F8EF79B
+P 4975 3225
+F 0 "#PWR02" H 4975 3075 50  0001 C CNN
+F 1 "VCC" H 4992 3398 50  0000 C CNN
+F 2 "" H 4975 3225 50  0001 C CNN
+F 3 "" H 4975 3225 50  0001 C CNN
+	1    4975 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 3225 4975 3375
+Wire Wire Line
+	4975 3375 4700 3375
+Wire Wire Line
+	5200 3225 5200 3700
+Wire Wire Line
+	5200 3700 4700 3700
+$Comp
+L power:GND #PWR07
+U 1 1 5F8EF84F
+P 4975 4850
+F 0 "#PWR07" H 4975 4600 50  0001 C CNN
+F 1 "GND" H 4980 4677 50  0000 C CNN
+F 2 "" H 4975 4850 50  0001 C CNN
+F 3 "" H 4975 4850 50  0001 C CNN
+	1    4975 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4750 4975 4750
+Wire Wire Line
+	4975 4750 4975 4850
+$Comp
+L power:GND #PWR06
+U 1 1 5F8F04B1
+P 6475 4700
+F 0 "#PWR06" H 6475 4450 50  0001 C CNN
+F 1 "GND" H 6480 4527 50  0000 C CNN
+F 2 "" H 6475 4700 50  0001 C CNN
+F 3 "" H 6475 4700 50  0001 C CNN
+	1    6475 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 4525 6475 4700
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5F8F0561
+P 6475 3350
+F 0 "#PWR04" H 6475 3200 50  0001 C CNN
+F 1 "+3.3V" H 6490 3523 50  0000 C CNN
+F 2 "" H 6475 3350 50  0001 C CNN
+F 3 "" H 6475 3350 50  0001 C CNN
+	1    6475 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 3350 6475 3475
+Text GLabel 7200 3775 2    50   Input ~ 0
+MOSI
+Text GLabel 7200 3875 2    50   Input ~ 0
+MISO
+Text GLabel 7200 3975 2    50   Input ~ 0
+SCK
+Text GLabel 7200 4175 2    50   Input ~ 0
+CE
+Text GLabel 7200 4275 2    50   Input ~ 0
+IRQ
+Wire Wire Line
+	6975 4275 7200 4275
+Wire Wire Line
+	6975 4175 7200 4175
+Wire Wire Line
+	6975 3975 7200 3975
+Wire Wire Line
+	6975 3875 7200 3875
+Wire Wire Line
+	6975 3775 7200 3775
+$Comp
+L power:GND #PWR08
+U 1 1 5F8F0B2B
+P 6325 5575
+F 0 "#PWR08" H 6325 5325 50  0001 C CNN
+F 1 "GND" H 6330 5402 50  0000 C CNN
+F 2 "" H 6325 5575 50  0001 C CNN
+F 3 "" H 6325 5575 50  0001 C CNN
+	1    6325 5575
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6325 5675 2    50   Input ~ 0
+CE
+Text GLabel 6325 5775 2    50   Input ~ 0
+SCK
+Text GLabel 6325 5875 2    50   Input ~ 0
+MISO
+Text GLabel 7200 5875 2    50   Input ~ 0
+IRQ
+Text GLabel 7200 5775 2    50   Input ~ 0
+MOSI
+$Comp
+L mycustomsymbols:nrf24l01 U1
+U 1 1 5F8F0E95
+P 6475 3925
+F 0 "U1" H 6197 3896 50  0000 R CNN
+F 1 "nrf24l01" H 6197 3805 50  0000 R CNN
+F 2 "mycustomfootprints:nrf24l01_custom" H 6475 3925 50  0001 C CNN
+F 3 "" H 6475 3925 50  0001 C CNN
+	1    6475 3925
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 4075 2    50   Input ~ 0
+CSN
+Wire Wire Line
+	6975 4075 7200 4075
+Text GLabel 7200 5675 2    50   Input ~ 0
+CSN
+$Comp
+L power:VCC #PWR09
+U 1 1 5F8F1C27
+P 7225 5575
+F 0 "#PWR09" H 7225 5425 50  0001 C CNN
+F 1 "VCC" V 7242 5703 50  0000 L CNN
+F 2 "" H 7225 5575 50  0001 C CNN
+F 3 "" H 7225 5575 50  0001 C CNN
+	1    7225 5575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F8F21CC
+P 4975 4675
+F 0 "#FLG0101" H 4975 4750 50  0001 C CNN
+F 1 "PWR_FLAG" H 4975 4849 50  0000 C CNN
+F 2 "" H 4975 4675 50  0001 C CNN
+F 3 "~" H 4975 4675 50  0001 C CNN
+	1    4975 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 4675 4975 4750
+Connection ~ 4975 4750
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F8F2514
+P 7225 5525
+F 0 "#FLG0102" H 7225 5600 50  0001 C CNN
+F 1 "PWR_FLAG" H 7425 5675 50  0000 C CNN
+F 2 "" H 7225 5525 50  0001 C CNN
+F 3 "~" H 7225 5525 50  0001 C CNN
+	1    7225 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5F917E65
+P 6000 5675
+F 0 "J1" H 6106 5953 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6225 5350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6000 5675 50  0001 C CNN
+F 3 "~" H 6000 5675 50  0001 C CNN
+	1    6000 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5F917EB2
+P 6900 5675
+F 0 "J2" H 7006 5953 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7125 5350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6900 5675 50  0001 C CNN
+F 3 "~" H 6900 5675 50  0001 C CNN
+	1    6900 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 5575 6200 5575
+Wire Wire Line
+	6325 5675 6200 5675
+Wire Wire Line
+	6325 5775 6200 5775
+Wire Wire Line
+	6325 5875 6200 5875
+Wire Wire Line
+	7100 5575 7225 5575
+Wire Wire Line
+	7225 5525 7225 5575
+Connection ~ 7225 5575
+Wire Wire Line
+	7200 5675 7100 5675
+Wire Wire Line
+	7200 5775 7100 5775
+Wire Wire Line
+	7200 5875 7100 5875
+$EndSCHEMATC

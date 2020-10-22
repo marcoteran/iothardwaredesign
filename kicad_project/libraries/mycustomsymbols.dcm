@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP nrf24l01
+D nRF24L01 module
+$ENDCMP
+#
+#End Doc Library

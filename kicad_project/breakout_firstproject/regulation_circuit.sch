@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+LIBS:breakout_firstproject-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "Regulation"
+Date "2020-10-15"
+Rev "1"
+Comp "Universidad Sergio Arboleda"
+Comment1 "Designer: Marco Teran"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR012
+U 1 1 5F8A1AC7
+P 3550 2800
+F 0 "#PWR012" H 3550 2650 50  0001 C CNN
+F 1 "VCC" H 3565 2973 50  0000 C CNN
+F 2 "" H 3550 2800 50  0001 C CNN
+F 3 "" H 3550 2800 50  0001 C CNN
+	1    3550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5F8A1F90
+P 3550 3425
+F 0 "#PWR016" H 3550 3175 50  0001 C CNN
+F 1 "GND" H 3555 3252 50  0000 C CNN
+F 2 "" H 3550 3425 50  0001 C CNN
+F 3 "" H 3550 3425 50  0001 C CNN
+	1    3550 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F8A28BB
+P 3750 3125
+F 0 "C2" H 3865 3171 50  0000 L CNN
+F 1 "104" H 3865 3080 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3788 2975 50  0001 C CNN
+F 3 "~" H 3750 3125 50  0001 C CNN
+	1    3750 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F8A3A04
+P 3325 3125
+F 0 "C1" H 3440 3171 50  0000 L CNN
+F 1 "10u" H 3440 3080 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 3325 3125 50  0001 C CNN
+F 3 "~" H 3325 3125 50  0001 C CNN
+	1    3325 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 2975 3325 2875
+Wire Wire Line
+	3325 2875 3550 2875
+Wire Wire Line
+	3550 2875 3550 2800
+Wire Wire Line
+	3750 2975 3750 2875
+Wire Wire Line
+	3750 2875 3550 2875
+Connection ~ 3550 2875
+Wire Wire Line
+	3325 3275 3325 3350
+Wire Wire Line
+	3325 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 3425
+Wire Wire Line
+	3750 3275 3750 3350
+Wire Wire Line
+	3750 3350 3550 3350
+Connection ~ 3550 3350
+Text HLabel 8250 2650 2    50   Input ~ 0
+VCC
+Text HLabel 8275 3125 2    50   Input ~ 0
+GND
+Text HLabel 8250 2825 2    50   Output ~ 0
+D3.3V
+$Comp
+L Regulator_Linear:LM1117-3.3 U2
+U 1 1 5F8ED7C3
+P 5375 3000
+F 0 "U2" H 5375 3242 50  0000 C CNN
+F 1 "LM1117-3.3" H 5375 3151 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5375 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 5375 3000 50  0001 C CNN
+	1    5375 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5F8ED994
+P 8100 2550
+F 0 "#PWR011" H 8100 2400 50  0001 C CNN
+F 1 "VCC" H 8115 2723 50  0000 C CNN
+F 2 "" H 8100 2550 50  0001 C CNN
+F 3 "" H 8100 2550 50  0001 C CNN
+	1    8100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2550 8100 2650
+Wire Wire Line
+	8100 2650 8250 2650
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5F8EDA4B
+P 7850 2550
+F 0 "#PWR010" H 7850 2400 50  0001 C CNN
+F 1 "+3.3V" H 7865 2723 50  0000 C CNN
+F 2 "" H 7850 2550 50  0001 C CNN
+F 3 "" H 7850 2550 50  0001 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5F8EDB2A
+P 8125 3225
+F 0 "#PWR015" H 8125 2975 50  0001 C CNN
+F 1 "GND" H 8130 3052 50  0000 C CNN
+F 2 "" H 8125 3225 50  0001 C CNN
+F 3 "" H 8125 3225 50  0001 C CNN
+	1    8125 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8125 3225 8125 3125
+Wire Wire Line
+	8125 3125 8275 3125
+Text Notes 8575 2700 0    50   ~ 0
+Voltaje de alimentación: 5 V
+$Comp
+L power:VCC #PWR013
+U 1 1 5F8EDCAE
+P 4900 2850
+F 0 "#PWR013" H 4900 2700 50  0001 C CNN
+F 1 "VCC" H 4915 3023 50  0000 C CNN
+F 2 "" H 4900 2850 50  0001 C CNN
+F 3 "" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2850 4900 3000
+Wire Wire Line
+	4900 3000 5075 3000
+Wire Wire Line
+	7850 2825 7850 2550
+Wire Wire Line
+	7850 2825 8250 2825
+$Comp
+L power:GND #PWR017
+U 1 1 5F8EE075
+P 5375 3425
+F 0 "#PWR017" H 5375 3175 50  0001 C CNN
+F 1 "GND" H 5380 3252 50  0000 C CNN
+F 2 "" H 5375 3425 50  0001 C CNN
+F 3 "" H 5375 3425 50  0001 C CNN
+	1    5375 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 3300 5375 3425
+$Comp
+L power:+3.3V #PWR014
+U 1 1 5F8EE1C8
+P 5825 2875
+F 0 "#PWR014" H 5825 2725 50  0001 C CNN
+F 1 "+3.3V" H 5840 3048 50  0000 C CNN
+F 2 "" H 5825 2875 50  0001 C CNN
+F 3 "" H 5825 2875 50  0001 C CNN
+	1    5825 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 2875 5825 3000
+Wire Wire Line
+	5825 3000 5675 3000
+$Comp
+L Device:CP C3
+U 1 1 5F8EE3F4
+P 5825 3250
+F 0 "C3" H 5943 3296 50  0000 L CNN
+F 1 "10u" H 5943 3205 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 5863 3100 50  0001 C CNN
+F 3 "~" H 5825 3250 50  0001 C CNN
+	1    5825 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 3100 5825 3000
+Connection ~ 5825 3000
+Wire Wire Line
+	6225 3100 6225 3000
+Wire Wire Line
+	6225 3000 5825 3000
+$Comp
+L power:GND #PWR018
+U 1 1 5F8EE825
+P 6025 3550
+F 0 "#PWR018" H 6025 3300 50  0001 C CNN
+F 1 "GND" H 6030 3377 50  0000 C CNN
+F 2 "" H 6025 3550 50  0001 C CNN
+F 3 "" H 6025 3550 50  0001 C CNN
+	1    6025 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 3400 5825 3450
+Wire Wire Line
+	5825 3450 6025 3450
+$Comp
+L Device:C C4
+U 1 1 5F8EE37A
+P 6225 3250
+F 0 "C4" H 6340 3296 50  0000 L CNN
+F 1 "104" H 6340 3205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6263 3100 50  0001 C CNN
+F 3 "~" H 6225 3250 50  0001 C CNN
+	1    6225 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 3450 6025 3450
+Wire Wire Line
+	6225 3400 6225 3450
+Connection ~ 6025 3450
+Wire Wire Line
+	6025 3450 6025 3550
+$EndSCHEMATC

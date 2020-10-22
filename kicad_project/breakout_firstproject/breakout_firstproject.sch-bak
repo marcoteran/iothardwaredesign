@@ -1,0 +1,72 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 2
+Title "Main circuit"
+Date "2020-10-15"
+Rev "1"
+Comp "Universidad Sergio Arboleda"
+Comment1 "Designer: Marco Teran"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5F89E7B4
+P 6825 3275
+F 0 "D1" V 6864 3157 50  0000 R CNN
+F 1 "LED" V 6773 3157 50  0000 R CNN
+F 2 "" H 6825 3275 50  0001 C CNN
+F 3 "~" H 6825 3275 50  0001 C CNN
+	1    6825 3275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F89F465
+P 6825 3825
+F 0 "R1" H 6895 3871 50  0000 L CNN
+F 1 "R" H 6895 3780 50  0000 L CNN
+F 2 "" V 6755 3825 50  0001 C CNN
+F 3 "~" H 6825 3825 50  0001 C CNN
+	1    6825 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F89FF96
+P 6825 4175
+F 0 "#PWR0101" H 6825 3925 50  0001 C CNN
+F 1 "GND" H 6830 4002 50  0000 C CNN
+F 2 "" H 6825 4175 50  0001 C CNN
+F 3 "" H 6825 4175 50  0001 C CNN
+	1    6825 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5F8A0690
+P 6825 2925
+F 0 "#PWR0102" H 6825 2775 50  0001 C CNN
+F 1 "+3.3V" H 6840 3098 50  0000 C CNN
+F 2 "" H 6825 2925 50  0001 C CNN
+F 3 "" H 6825 2925 50  0001 C CNN
+	1    6825 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 2925 6825 3125
+Wire Wire Line
+	6825 3425 6825 3675
+Wire Wire Line
+	6825 3975 6825 4175
+$Sheet
+S 2050 3025 2650 1975
+U 5F8A13AB
+F0 "Regulation" 50
+F1 "regulation_circuit.sch" 50
+$EndSheet
+$EndSCHEMATC
