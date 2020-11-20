@@ -294,7 +294,7 @@ U 1 1 5FAB00EE
 P 4850 7275
 F 0 "SW2" V 4896 7227 50  0000 R CNN
 F 1 "SW_Push" V 4805 7227 50  0000 R CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 4850 7475 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 4850 7475 50  0001 C CNN
 F 3 "" H 4850 7475 50  0001 C CNN
 	1    4850 7275
 	0    -1   -1   0   
@@ -1221,7 +1221,7 @@ U 1 1 5FB4EC5B
 P 7100 5225
 F 0 "SW1" V 7146 5177 50  0000 R CNN
 F 1 "SW_Push" V 7055 5177 50  0000 R CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 7100 5425 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H 7100 5425 50  0001 C CNN
 F 3 "" H 7100 5425 50  0001 C CNN
 	1    7100 5225
 	0    -1   -1   0   
@@ -1461,7 +1461,7 @@ U 1 1 5FD6F592
 P 7450 6050
 F 0 "MH3" H 7550 6101 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7125 6250 50  0001 L CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 7450 6050 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 7450 6050 50  0001 C CNN
 F 3 "~" H 7450 6050 50  0001 C CNN
 	1    7450 6050
 	1    0    0    -1  
@@ -1485,7 +1485,7 @@ U 1 1 5FDD787D
 P 7900 6050
 F 0 "MH4" H 8000 6101 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7575 6250 50  0001 L CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 7900 6050 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 7900 6050 50  0001 C CNN
 F 3 "~" H 7900 6050 50  0001 C CNN
 	1    7900 6050
 	1    0    0    -1  
@@ -1509,7 +1509,7 @@ U 1 1 5FDEEE4C
 P 6600 6050
 F 0 "MH1" H 6700 6101 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6275 6250 50  0001 L CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 6600 6050 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 6600 6050 50  0001 C CNN
 F 3 "~" H 6600 6050 50  0001 C CNN
 	1    6600 6050
 	1    0    0    -1  
@@ -1533,7 +1533,7 @@ U 1 1 5FDEEE5A
 P 7050 6050
 F 0 "MH2" H 7150 6101 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6725 6250 50  0001 L CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 7050 6050 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 7050 6050 50  0001 C CNN
 F 3 "~" H 7050 6050 50  0001 C CNN
 	1    7050 6050
 	1    0    0    -1  
